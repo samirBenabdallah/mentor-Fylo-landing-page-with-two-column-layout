@@ -1,0 +1,74 @@
+@media screen and (max-width: 930px) {
+  body {
+    justify-content: center !important;
+  }
+  header {
+    width: 412px;
+  }
+  input {
+    width: 100% !important;
+  }
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 412px !important;
+  }
+  section:first-of-type aside {
+    text-align: center;
+    div {
+      display: block;
+    }
+  }
+  section:nth-of-type(2) {
+    &::after {
+      background-image: url("../images/bg-curve-mobile.svg");
+    }
+    > img {
+      height: 300px;
+    }
+    button {
+      margin: 0px auto 50px;
+    }
+    .paragraphe {
+      margin-inline: auto;
+      width: 90% !important;
+    }
+  }
+  section:last-of-type {
+    flex-direction: column;
+    text-align: center;
+    > * {
+      width: 90%;
+    }
+    div > p {
+      margin-block: 30px;
+    }
+    aside {
+      margin-left: 0;
+    }
+  }
+
+  footer {
+    > img {
+      height: 70px;
+    }
+    main {
+      display: block;
+      div:first-of-type,
+      div:nth-of-type(3) {
+        margin-block: 30px;
+      }
+      > div:last-of-type {
+        display: flex;
+        justify-content: center;
+        img {
+          margin-inline: 10px;
+        }
+      }
+    }
+  }
+}
